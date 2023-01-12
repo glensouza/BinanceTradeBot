@@ -1,0 +1,14 @@
+{
+  "profiles": {
+    "BinanceTradeBot.Functions": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7222"
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+      "httpPort": 33535,
+      "useSSL": false
+    }
+  }
+}
