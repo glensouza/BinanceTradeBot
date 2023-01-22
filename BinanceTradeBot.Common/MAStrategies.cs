@@ -1,8 +1,9 @@
-﻿namespace BinanceTradeBot.Common;
-
-public enum MovingAverageStrategies
+﻿namespace BinanceTradeBot.Common
 {
-    SimpleMovingAverage = 1,
-    ExponentialMovingAverage = 2,
-    WeightedMovingAverage = 3
+    public enum MovingAverageStrategies
+    {
+        SimpleMovingAverage = 1,
+        ExponentialMovingAverage = 2,
+        WeightedMovingAverage = 3
+    }
 }

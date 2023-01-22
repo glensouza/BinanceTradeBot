@@ -1,30 +1,34 @@
-﻿namespace BinanceTradeBot.Common;
+﻿using System;
+using System.Threading.Tasks;
 
-// The Market Maker Algo is meant to work in any market and trade long and short
-public class StrategyMarketMaker : IStrategies
+namespace BinanceTradeBot.Common
 {
-    public StrategyMarketMaker()
+    // The Market Maker Algo is meant to work in any market and trade long and short
+    public class StrategyMarketMaker : IStrategies
     {
-    }
+        public StrategyMarketMaker()
+        {
+        }
 
-    public async Task RunStrategyAsync()
-    {
-        throw new NotImplementedException();
-    }
+        public async Task RunStrategyAsync()
+        {
+            throw new NotImplementedException();
+        }
 
-    private void ReleaseUnmanagedResources()
-    {
-        // TODO: release unmanaged resources here
-    }
+        private void ReleaseUnmanagedResources()
+        {
+            // TODO: release unmanaged resources here
+        }
 
-    public void Dispose()
-    {
-        this.ReleaseUnmanagedResources();
-        GC.SuppressFinalize(this);
-    }
+        public void Dispose()
+        {
+            this.ReleaseUnmanagedResources();
+            GC.SuppressFinalize(this);
+        }
 
-    ~StrategyMarketMaker()
-    {
-        this.ReleaseUnmanagedResources();
+        ~StrategyMarketMaker()
+        {
+            this.ReleaseUnmanagedResources();
+        }
     }
 }

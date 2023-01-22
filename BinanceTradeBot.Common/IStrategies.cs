@@ -1,6 +1,10 @@
-﻿namespace BinanceTradeBot.Common;
+﻿using System;
+using System.Threading.Tasks;
 
-public interface IStrategies : IDisposable
+namespace BinanceTradeBot.Common
 {
-    public Task RunStrategyAsync();
+    public interface IStrategies : IDisposable
+    {
+        Task RunStrategyAsync();
+    }
 }

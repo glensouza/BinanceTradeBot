@@ -3,10 +3,10 @@ using System.Threading.Tasks;
 
 namespace BinanceTradeBot.Common
 {
-    // ​Nadarya Watson Algorithm: This bot is based on the viral Nadarya Watson indicator from trading view.
-    public class StrategyNadaryaWatson : IStrategies
+    //Turtle Trending Algorithm: This algorithm analyzes the past 55 time periods and buys and sells based off the overall market trend + a few indicator
+    public class StrategyTurtleTrending : IStrategies
     {
-        public StrategyNadaryaWatson()
+        public StrategyTurtleTrending()
         {
         }
 
@@ -26,7 +26,7 @@ namespace BinanceTradeBot.Common
             GC.SuppressFinalize(this);
         }
 
-        ~StrategyNadaryaWatson()
+        ~StrategyTurtleTrending()
         {
             this.ReleaseUnmanagedResources();
         }

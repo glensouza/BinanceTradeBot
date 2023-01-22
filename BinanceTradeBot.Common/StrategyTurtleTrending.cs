@@ -1,31 +1,34 @@
-﻿namespace BinanceTradeBot.Common;
+﻿using System;
+using System.Threading.Tasks;
 
-    //Turtle Trending Algorithm: This algorithm analyzes the past 55 time periods and buys and sells based off the overall market trend + a few indicator
-public class StrategyTurtleTrending : IStrategies
+namespace BinanceTradeBot.Common
 {
-    public StrategyTurtleTrending()
+    //Turtle Trending Algorithm: This algorithm analyzes the past 55 time periods and buys and sells based off the overall market trend + a few indicator
+    public class StrategyTrending : IStrategies
     {
-    }
+        public StrategyTrending()
+        {
+        }
 
-    public async Task RunStrategyAsync()
-    {
-        throw new NotImplementedException();
-    }
+        public async Task RunStrategyAsync()
+        {
+            throw new NotImplementedException();
+        }
 
-    private void ReleaseUnmanagedResources()
-    {
-        // TODO: release unmanaged resources here
-    }
+        private void ReleaseUnmanagedResources()
+        {
+            // TODO: release unmanaged resources here
+        }
 
-    public void Dispose()
-    {
-        this.ReleaseUnmanagedResources();
-        GC.SuppressFinalize(this);
-    }
+        public void Dispose()
+        {
+            this.ReleaseUnmanagedResources();
+            GC.SuppressFinalize(this);
+        }
 
-    ~StrategyTurtleTrending()
-    {
-        this.ReleaseUnmanagedResources();
+        ~StrategyTrending()
+        {
+            this.ReleaseUnmanagedResources();
+        }
     }
-};
-
+}

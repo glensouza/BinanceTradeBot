@@ -1,30 +1,34 @@
-﻿namespace BinanceTradeBot.Common;
+﻿using System;
+using System.Threading.Tasks;
 
-// ​The Breakout Algo: This is a trading algorithm that is built to capture breakouts or breakdowns 
-public class StrategyBreakout : IStrategies
+namespace BinanceTradeBot.Common
 {
-    public StrategyBreakout()
+    // ​The Breakout Algo: This is a trading algorithm that is built to capture breakouts or breakdowns 
+    public class StrategyBreakout : IStrategies
     {
-    }
+        public StrategyBreakout()
+        {
+        }
 
-    public async Task RunStrategyAsync()
-    {
-        throw new NotImplementedException();
-    }
+        public async Task RunStrategyAsync()
+        {
+            throw new NotImplementedException();
+        }
 
-    private void ReleaseUnmanagedResources()
-    {
-        // TODO: release unmanaged resources here
-    }
+        private void ReleaseUnmanagedResources()
+        {
+            // TODO: release unmanaged resources here
+        }
 
-    public void Dispose()
-    {
-        this.ReleaseUnmanagedResources();
-        GC.SuppressFinalize(this);
-    }
+        public void Dispose()
+        {
+            this.ReleaseUnmanagedResources();
+            GC.SuppressFinalize(this);
+        }
 
-    ~StrategyBreakout()
-    {
-        this.ReleaseUnmanagedResources();
+        ~StrategyBreakout()
+        {
+            this.ReleaseUnmanagedResources();
+        }
     }
 }
